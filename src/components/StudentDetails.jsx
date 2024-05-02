@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { Link } from "react-router-dom";
 
-const StudentDetails = (studentDetails) => {
+const StudentDetails = () => {
     // Use state
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -21,7 +21,7 @@ const StudentDetails = (studentDetails) => {
         }
     };
 
-    // Conditional Rendering
+    // Rendering
     return (
         <>
             <form onSubmit={handleSubmit}>
